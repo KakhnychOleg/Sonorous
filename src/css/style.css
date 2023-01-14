@@ -1,0 +1,151 @@
+/* Default */
+@import "reset.css";
+
+/* Block */
+@import "header.css";
+@import "slider.css";
+@import "about.css";
+@import "project.css";
+@import "contact.css";
+@import "accord.css";
+@import "sertific.css";
+@import "contact.css";
+@import "humb-menu.css";
+
+@import "footer.css";
+
+/* Global */
+.container {
+   max-width: 1180px;
+   margin: 0 auto;
+   
+   color: #FFFFFF;
+}
+
+body {
+   font-family: 'Montserrat', sans-serif;
+
+   background: #333333;
+}
+
+.about-block,
+.project-section,
+.services-section,
+.contact-section {
+   padding: 134px 0;
+}
+
+.about,
+.project,
+.services,
+.sertific,
+.contact {
+   display: flex;
+   align-items: start;
+   justify-content: flex-start;
+}
+
+/* Title */
+.title-section {
+   font-weight: 400;
+   font-size: 1.25rem;
+   line-height: 34px;
+   color: #ADADAD;
+   text-transform: uppercase;
+
+   min-width: 100px;
+   margin-right: 100px;
+}
+.title-block {
+   font-weight: 600;
+   font-size: 2.875rem;
+   line-height: 60px;
+   
+   color: #FFFFFF;
+   max-width: 70%;
+}
+
+._text-center {
+   text-align: center;
+}
+._mb-15 {
+   margin-bottom: 15px;
+}
+._mb-20 {
+   margin-bottom: 20px;
+}
+._mb-30 {
+   margin-bottom: 30px;
+}
+._mt-60 {
+   margin-top: 60px;
+}
+._mb-60 {
+   margin-bottom: 60px;
+}
+._mb-70 {
+   margin-bottom: 70px;
+}
+._mr-70 {
+   margin-right: 70px;
+}
+._mt-80 {
+   margin-top: 80px;
+}
+
+/* Animation text */
+.element-animation {
+   opacity: 0;
+   transform: translateY(20%);
+ }
+ 
+ .element-animation.element-show {
+   opacity: 1;
+   transition: all 1s;
+   transform: translateY(0%);
+}
+
+/* Responsive */
+@media screen and (max-width: 1260px){   
+   .title-section {
+      margin-bottom: 20px;
+   }
+   .container {
+      padding: 0 15px;
+   }
+}
+
+@media screen and (max-width: 1024px){   
+   .about-block,
+   .project-section,
+   .services-section,
+   .sertific-section,
+   .contact-section {
+      padding: 50px 0;
+   }
+   .title-block {
+      font-size: 1.8rem;
+   }
+   .title-block {
+      min-width: 85%;
+   }
+}
+
+@media screen and (max-width: 480px){   
+   .about,
+   .project,
+   .services,
+   .sertific,
+   .contact {
+      justify-content: center;
+   }
+   .title-section {
+      margin-right: 0;
+      text-align: center;
+   }
+   .title-block {
+      text-align: center;
+      font-size: 2rem;
+      max-width: 100%;
+   }
+}

@@ -10,38 +10,6 @@ $(document).ready(function () {
     $(".mobile__item:nth-child("+ a +")").css("animation-delay", "."+ (a+1) +"s");   
   };
 
-  // Slider
-  $('.slider__list').slick({
-    dots: true,
-    infinite: true,
-    nextArrow: '.slick-next-slide',
-    prevArrow: '.slick-prev-slide',
-    appendDots: '.slider__dots',
-    autoplay: true,
-    speed: 500,
-    pauseOnHover: true,
-    slidesToShow: 1,
-    slidesToScroll: 1
-  });
-  
-  // Current number slide
-  $('.slider__list').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-    $('.first-current').html(function(currentnum) {
-      $('.first-current').empty();
-      var number = ('0' + (++nextSlide)) ;
-      return number;
-    });
-  });
-
-  // Accordion
-  $('.accordion__title').click(function(event) {
-    if($('.accordion').hasClass('one')){
-      $('.accordion__title').not($(this)).removeClass('active');
-      $('.accordion__text').not($(this).next()).slideUp(300);
-    }
-    $(this).toggleClass('active').next().slideToggle(300)
-  });
-
   // Contact-checkbox
   $(document).on('click', '.checkbox', function(event) {
     if($(this).hasClass('active-check')){
@@ -75,20 +43,3 @@ $(document).ready(function () {
 //    observer.observe(elm);
 //  }
 
-//  sca
-let inputs = document.querySelectorAll('.input__file');
-Array.prototype.forEach.call(inputs, function (input) {
-  let label = input.nextElementSibling,
-    labelVal = label.querySelector('.input__file-button-text').innerText;
-
-  input.addEventListener('change', function (e) {
-    let countFiles = '';
-    if (this.files && this.files.length >= 1)
-      countFiles = this.files.length;
-
-    if (countFiles)
-      label.querySelector('.input__file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
-    else
-      label.querySelector('.input__file-button-text').innerText = labelVal;
-  });
-});

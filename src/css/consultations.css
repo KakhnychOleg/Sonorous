@@ -1,0 +1,50 @@
+.consultations {
+   display: flex;
+}
+
+.consultations__images {
+   max-width: 636px;
+   width: 100%;
+}
+.consultations__img {
+   max-width: 585px;
+   width: 100%;
+   margin: 0 auto;
+}
+
+.form {
+   background: #FFFFFF;
+   box-shadow: 0px 4px 24px rgba(117, 52, 255, 0.12);
+   border-radius: 20px;
+   padding: 40px 60px;
+
+   max-width: 605px;
+}
+.form__title {
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 39px;
+   text-transform: capitalize;
+   
+   color: #191D27;
+   margin-bottom: 8px;
+}
+.form__text {
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 22px;
+   
+   color: #7D7D7D;
+   margin-bottom: 15px;
+}
+.form__input-text {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;   
+   color: #191D27;
+   margin-bottom: 14px;
+}
+.form__block-input {
+   min-width: 232px;
+   margin-bottom: 13px;
+}

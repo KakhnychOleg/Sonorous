@@ -1,0 +1,59 @@
+.technological {
+   padding: 82px 0 200px 0;
+   background:#361F79;
+   background-image: url('../img/product-bg.png');
+   background-position: center;
+}
+.technological__title {
+   max-width: 585px;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+
+   color: #fff !important;
+}
+.technological__list {
+   display: flex;
+   justify-content: space-between;
+   gap: 20px;
+}
+.technological__card {
+   position: relative;
+   padding: 40px;
+   background: #FFFFFF;
+   border-radius: 20px;
+   box-sizing: border-box;
+}
+.technological__card:nth-child(1)::after {
+   position: absolute;
+   content: url('../img/product-vector01.png');
+   right: -57px;
+   top: 16px;
+}
+.technological__card:nth-child(2)::after {
+   position: absolute;
+   content: url('../img/product-vector02.png');
+   right: 37%;
+   bottom: -70px;
+}
+.technological__card:nth-child(3)::after {
+   position: absolute;
+   content: url('../img/product-vector03.png');
+   right: 57px;
+   top: -30px;
+}
+.technological__title {
+   display: flex;
+   gap: 20px;
+}
+.technological__title-span {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 22px;
+   
+   color: #000000;
+}
+.second-block {
+   position: relative;
+   top: 70px;
+}

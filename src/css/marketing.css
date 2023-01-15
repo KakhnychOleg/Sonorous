@@ -1,0 +1,117 @@
+.marketing {
+   display: flex;
+   padding-bottom: 100px;
+}
+
+.marketing__contant {
+   position: relative;
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   padding: 40px 42px 40px 32px;
+   
+   background: #361F79;
+   border-radius: 0px 40px 40px 0px;
+}
+.marketing__contant::after {
+   position: absolute;
+   content: '';
+   left: 0;
+   top: 50%;
+   width: 100%;
+   border: 1px dashed rgba(255, 255, 255, 0.16);
+}
+.marketing__item {
+   padding: 40px 0;
+   background: transparent;
+   border-radius: 40px;
+   transition: all .3s ease-in;
+}
+.marketing__item:nth-child(1),
+.marketing__item:nth-child(2),
+.marketing__item:nth-child(3) {
+   margin-bottom: 20px;
+}
+.marketing__item:nth-child(4),
+.marketing__item:nth-child(5),
+.marketing__item:nth-child(6) {
+   margin-top: 20px;
+}
+.marketing__item:hover{
+   padding: 40px 33px;
+   background: linear-gradient(135.76deg, #F1E0E9 3.74%, #E9F0FB 95.92%);
+}
+.marketing__item:hover .marketing__item-title{
+   color: #191D27;
+}
+.marketing__item:hover .marketing__text{
+   color: #7D7D7D;
+}
+.marketing__item:hover .marketing__link{
+   color: #FF3F33;
+}
+.marketing__item:hover .marketing__link path{
+   fill: #FF3F33;
+}
+.marketing__title {
+   max-width: 415px;
+   width: 100%;
+   
+   padding: 45px 25px;
+      
+   background: #2A126F;
+   border-radius: 40px 0px 0px 40px;
+}
+.marketing__title--color {
+   color: #fff !important;
+   font-weight: 400 !important;
+}
+.marketing__title--text {
+   width: 313px;
+   
+   color: #BFA9FF !important;
+}
+.marketing__title-name {
+   display: inline-block;
+   border: 1px solid #FFFFFF;
+   border-radius: 40px;
+   padding: 4px 14px;
+      
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+   color: #FFFFFF;
+}
+.marketing__icons {
+   width: max-content;
+   padding: 10px;
+   background: linear-gradient(318.01deg, #F57163 0%, #D764BB 95.26%);
+   border-radius: 100%;
+   margin-bottom: 18px;
+}
+.marketing__item-title {
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 28px;
+   text-transform: capitalize;
+
+   color: #FFFFFF;
+   margin-bottom: 19px;
+}
+.marketing__text {
+   width: 215px;
+   color: #BFA9FF;
+   margin-bottom: 13px;
+}
+.marketing__link {   
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+   text-transform: capitalize;
+
+   color: #F8BBD0;
+}
+.marketing__link span{  
+   padding-right: 12px; 
+}
+

@@ -3,12 +3,11 @@
 
 /* Block */
 @import "header.css";
-@import "slider.css";
-@import "about.css";
-@import "project.css";
-@import "contact.css";
-@import "accord.css";
-@import "sertific.css";
+@import "technological.css";
+@import "services.css";
+@import "marketing.css";
+@import "app.css";
+@import "consultations.css";
 @import "contact.css";
 @import "humb-menu.css";
 
@@ -16,53 +15,56 @@
 
 /* Global */
 .container {
-   max-width: 1180px;
+   max-width: 1296px;
    margin: 0 auto;
    
-   color: #FFFFFF;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+
+   color: #7D7D7D;
 }
 
 body {
-   font-family: 'Montserrat', sans-serif;
-
-   background: #333333;
+   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.about-block,
+.hero-section,
 .project-section,
 .services-section,
 .contact-section {
    padding: 134px 0;
 }
 
-.about,
-.project,
-.services,
-.sertific,
-.contact {
-   display: flex;
-   align-items: start;
-   justify-content: flex-start;
-}
-
 /* Title */
-.title-section {
-   font-weight: 400;
-   font-size: 1.25rem;
-   line-height: 34px;
-   color: #ADADAD;
-   text-transform: uppercase;
-
-   min-width: 100px;
-   margin-right: 100px;
-}
-.title-block {
+.title {
    font-weight: 600;
-   font-size: 2.875rem;
-   line-height: 60px;
+   font-size: 60px;
+   line-height: 78px;
+   width: 416px;
    
-   color: #FFFFFF;
-   max-width: 70%;
+   text-transform: capitalize;
+   
+   color: #191D27;
+}
+.suptitle {
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;   
+   
+   color: #FF3F33;
+}
+.subtitle {
+   font-weight: 600;
+   font-size: 40px;
+   line-height: 56px;
+   
+   text-transform: capitalize;
+   
+   color: #191D27;
+}
+.color {
+   color: #2893F5;
 }
 
 ._text-center {
@@ -74,11 +76,14 @@ body {
 ._mb-20 {
    margin-bottom: 20px;
 }
+._mb-24 {
+   margin-bottom: 24px;
+}
 ._mb-30 {
    margin-bottom: 30px;
 }
-._mt-60 {
-   margin-top: 60px;
+._mb-40 {
+   margin-bottom: 40px;
 }
 ._mb-60 {
    margin-bottom: 60px;
@@ -86,8 +91,14 @@ body {
 ._mb-70 {
    margin-bottom: 70px;
 }
+._mt-60 {
+   margin-top: 60px;
+}
 ._mr-70 {
    margin-right: 70px;
+}
+._mt-70 {
+   margin-top: 70px;
 }
 ._mt-80 {
    margin-top: 80px;

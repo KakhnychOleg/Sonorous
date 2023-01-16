@@ -36,3 +36,31 @@
    max-width: 585px;
    width: 100%;
 }
+
+
+@media screen and (max-width:1024px){
+   .services {
+      justify-content: center;
+      flex-wrap: wrap;
+   }
+}
+@media screen and (max-width:640px){
+   .services {
+      gap: 50px;
+   }
+   ._services-width {
+      width: 100%;
+   }
+   ._services-width:nth-child(1) {
+      /* max-width: 611px; */
+      width: 98% !important;
+   }
+   ._services-width:nth-child(2) {
+      /* max-width: 443px; */
+      width: 71% !important;
+   }
+   ._services-width:nth-child(3) {
+      width: 83% !important;
+      /* width: 517px; */
+   }
+}

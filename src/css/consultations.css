@@ -106,3 +106,23 @@
 .form__btn:hover {
    background: #2536d4;
 }
+
+
+@media screen and (max-width:1024px){
+   .consultations {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+   }
+}
+@media screen and (max-width:650px){
+   .form {
+      padding: 40px 30px;
+   }
+   .form__block-name {
+      flex-wrap: wrap;
+   }
+   .form__block-input {
+      width: 100%;
+   }
+}

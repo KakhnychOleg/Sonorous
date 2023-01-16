@@ -17,7 +17,7 @@
    width: 30px;
    height: 2px;
    z-index: 99999;
-   background-color: #E4C686;
+   background-color: #7534FF;
    border-radius: 13px;
    transition-duration: .4s;
 }
@@ -56,7 +56,7 @@
    overflow: hidden;
 }
 .mobile__nav.open {
-   background: #333;
+   background: linear-gradient(135deg, #F2E8EB, #D9E4FF);
    width: 80%;
    height: 100vh;
    left: 0px;
@@ -71,8 +71,7 @@
    flex-direction: column;
    width: 227px;
 }
-.mobile__item,
-.mobile-tel__list {
+.mobile__item {
    background-color: transparent;
    width: 100%;
    opacity: 0;
@@ -84,41 +83,38 @@
    margin-bottom: 40px;
 }
 
-.mobile-tel__list {
-   font-size: 1.25rem;
-   font-style: normal;
-   font-weight: 600;
-   line-height: 1.5625rem;
-   color: #E4C686;
-}
-.mobile-tel__list:hover {
-   color: #fff;
-}
 .mobile__item a {
    font-size: 1.25rem;
    font-style: normal;
    font-weight: 600;
    line-height: 1.5625rem;
-   color: #fff;
+   color: #191D27;
 }
 .mobile__item a:hover {
-   color: #000;
+   color: #7534FF;
 }
+.mobile-tel__list {
+   display: flex;
+   align-items: center;
 
-.mobile-drop p a {
-   font-weight: 400;
-   font-size: 1.125rem;
-   line-height: 1.375rem;
+   transition: all .3s ease-in;
+      
+   background: #7534FF;
+   border-radius: 50px;
+   padding: 15px 31px;
+   width: max-content;
+
    
-   color: #252525;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 28px;
+
+   color: #FFFFFF;
 }
-.mobile-drop p a:hover {
-   color: #5c5c5c;
+.mobile-tel__list:hover {   
+   background: #5a29c4;
 }
 
-.mobile-drop p {
-   margin-top: 15px !important;
-}
 
 /* Hidden */
 .hidden {

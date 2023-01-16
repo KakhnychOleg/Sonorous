@@ -89,3 +89,30 @@
    border-top: 1px solid #313552;
    padding: 16px 0;
 }
+
+
+@media screen and (max-width:1024px){
+   .footer__top {
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+   }
+   .footer__text,
+   .footer__addres,
+   .footer__contact {
+      width: 50%;
+   }
+   .footer::before {
+      display: none;
+   }
+}
+@media screen and (max-width:540px){
+   .footer__top {
+      padding: 40px 0;
+   }
+   .footer__text,
+   .footer__addres,
+   .footer__contact {
+      width: 100%;
+   }
+}

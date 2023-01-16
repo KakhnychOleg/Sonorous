@@ -35,3 +35,23 @@
    
    color: #191D27;
 }
+
+
+@media screen and (max-width:1024px){
+   .app {
+      gap: 50px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
+@media screen and (max-width:500px){
+   .app {
+      padding-bottom: 0;
+   }
+   .list {
+      flex-wrap: wrap;
+   }
+   .list__item {
+      width: 100%;
+   }
+}

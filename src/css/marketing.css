@@ -6,8 +6,8 @@
 .marketing__contant {
    position: relative;
    display: flex;
-   justify-content: space-between;
    flex-wrap: wrap;
+   justify-content: space-between;
    padding: 40px 42px 40px 32px;
    
    background: #361F79;
@@ -113,5 +113,32 @@
 }
 .marketing__link span{  
    padding-right: 12px; 
+}
+
+
+@media screen and (max-width:1024px){
+   .marketing {
+      flex-wrap: wrap;
+   }
+   .marketing__contant {     
+      border-radius: 0px 0px 40px 40px ;
+   }
+   .marketing__title {        
+      max-width: 100%;
+      border-radius: 40px 40px 0px 0px ;
+   }
+   .marketing__contant {
+      flex-wrap: wrap;
+   }
+}
+
+@media screen and (max-width:600px){
+   .marketing__contant {
+      justify-content: center;
+      align-items: center;
+   }
+   .marketing__item {
+      padding: 20px 0;
+   }
 }
 

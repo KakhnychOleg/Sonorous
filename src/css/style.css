@@ -15,8 +15,9 @@
 
 /* Global */
 .container {
-   max-width: 1296px;
+   max-width: 1266px;
    margin: 0 auto;
+   padding: 0 15px;
    
    font-weight: 400;
    font-size: 16px;
@@ -121,19 +122,15 @@ body {
    .title-section {
       margin-bottom: 20px;
    }
+   .subtitle {
+      font-size: 30px;
+   }
    .container {
       padding: 0 15px;
    }
 }
 
-@media screen and (max-width: 1024px){   
-   .about-block,
-   .project-section,
-   .services-section,
-   .sertific-section,
-   .contact-section {
-      padding: 50px 0;
-   }
+@media screen and (max-width: 1024px){ 
    .title-block {
       font-size: 1.8rem;
    }
@@ -143,12 +140,8 @@ body {
 }
 
 @media screen and (max-width: 480px){   
-   .about,
-   .project,
-   .services,
-   .sertific,
-   .contact {
-      justify-content: center;
+   .title {
+      font-size: 40px;
    }
    .title-section {
       margin-right: 0;

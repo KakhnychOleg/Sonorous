@@ -22,8 +22,6 @@
    font-weight: 400;
    font-size: 16px;
    line-height: 22px;
-
-   color: #191D27;
 }
 
 .menu__item {
@@ -45,7 +43,8 @@
    cursor: pointer;
 }
 
-.contact-us{
+.contact-us,
+.contact-us-1{
    display: flex;
    align-items: center;
 
@@ -63,7 +62,8 @@
 
    color: #FFFFFF;
 }
-.contact-us:hover {   
+.contact-us:hover,
+.contact-us-1:hover {   
    background: #5a29c4;
 }
 
@@ -72,6 +72,7 @@
    display: flex;
    justify-content: space-between;
    align-items: center;
+   flex-wrap: wrap;
    padding: 100px 0 82px 0;
 }
 .hero__title {
@@ -103,6 +104,8 @@
    width: 100%;
 }
 .hero__list {
+   display: flex;
+   flex-direction: column;
    margin-left: 35px;
 }
 .first-num {
@@ -154,26 +157,77 @@
 } 
 
 /* REsponsive */
-@media screen and (max-width:1024px){
-   .header {
-      justify-content: space-between;
-      height: 60px;
+@media screen and (max-width:1081px){
+   .hero {
+      justify-content: center;
    }
-   .head::before {
-      top: 60px;
+   .hero__images {
+      margin-top: 50px;
    }
-   
-   .header__logo {
-      height: auto;
-      margin-left: 15px;
-      margin-top: 8px;
+   .hero__list {
+      width: 100%;
+      margin-top: 30px;
+      margin-left: 0;
+      flex-direction: row;
+      justify-content: center;
+      text-align: center;
    }
-
+   .hero__item {
+      margin: 0 15px;
+   }
+   .hero {
+      padding: 60px 0 42px 0;
+   }
+}
+@media screen and (max-width:1124px){
+   .menu {
+      gap: 20px;
+   }
+}
+@media screen and (max-width:1222px){
+   .hero {
+      justify-content: center;
+   }
+   .hero__list {
+      margin-top: 30px;
+      flex-direction: row;
+      text-align: center;
+   }
 }
 
 @media screen and (max-width:1024px){
    .menu,
-   .mobile-tel {
+   .contact-us {
        display: none;
+   }
+   .second {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+}
+@media screen and (max-width:900px){
+   .technological__list {
+      flex-wrap: wrap;
+      justify-content: center;
+   }
+   .technological__card.second-block {
+      top: 0;
+   }
+   .technological {
+      padding: 50px 0 50px 0 !important;
+   }
+}
+@media screen and (max-width:600px){
+   .hero__images::before {
+      display: none;
+   }
+   .hero__images::after {
+      right: 0;
+   }
+   .second {
+      gap: 40px;
+   }
+   .second__num {
+      margin-left: 0;
    }
 }

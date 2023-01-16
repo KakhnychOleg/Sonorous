@@ -49,11 +49,12 @@
 }
 .contact__item {
    align-items: center;
+   margin-bottom: 10px;
 }
 .addres__name {
    font-weight: 500;
    font-size: 16px;
-   line-height: 16px;
+   line-height: 24px;
    text-transform: capitalize;
    
    color: #FFFFFF;
@@ -74,6 +75,7 @@
    text-transform: lowercase;
    transition: all .3s ease;
    color: #FFFFFF;
+   margin-bottom: 12px;
 }
 .contact__link:hover {   
    color: #FF4E43;
@@ -114,5 +116,10 @@
    .footer__addres,
    .footer__contact {
       width: 100%;
+   }
+}
+@media screen and (max-width:436px){
+   .footer__text--line {
+      right: 30px;
    }
 }

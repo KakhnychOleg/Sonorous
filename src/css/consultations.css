@@ -83,10 +83,20 @@
 .form__textarea {
    width: 100%;
    height: 112px;
+   min-height: 112px;
+   max-height: 200px;
+   min-width: 100%;
+   max-width: 485px;
 
    background: #FFFFFF;
    border: 1px solid #CFCFCF;
    border-radius: 4px;
+}
+.form__textarea:hover {
+   border: 1px solid #2893F5;
+}
+.form__textarea:focus {
+   border: 1px solid #1e6cb4;
 }
 .form__btn {
    background: #0E1552;

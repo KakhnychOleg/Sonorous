@@ -1,5 +1,6 @@
 .consultations {
    display: flex;
+   padding-bottom: 80px;
 }
 
 .consultations__images {
@@ -97,10 +98,11 @@
    font-size: 16px;
    line-height: 28px;
    text-align: center;
+   border: none;
+   transition: all .3s ease;
 
    color: #FFFFFF;
 }
-
 .form__btn:hover {
    background: #2536d4;
 }

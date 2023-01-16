@@ -29,11 +29,11 @@ body {
    font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
-.hero-section,
-.project-section,
-.services-section,
-.contact-section {
-   padding: 134px 0;
+.wrapper-header {
+   background: linear-gradient(135deg, #F2E8EB, #D9E4FF);
+}
+.wrapper {
+   background: linear-gradient(135deg, #F2E8EB, #D9E4FF 20%, #fff 60%);
 }
 
 /* Title */

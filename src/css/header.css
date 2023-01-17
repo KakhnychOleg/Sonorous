@@ -205,18 +205,6 @@
       justify-content: center;
    }
 }
-@media screen and (max-width:900px){
-   .technological__list {
-      flex-wrap: wrap;
-      justify-content: center;
-   }
-   .technological__card.second-block {
-      top: 0;
-   }
-   .technological {
-      padding: 50px 0 50px 0 !important;
-   }
-}
 @media screen and (max-width:600px){
    .hero__images::before {
       display: none;
